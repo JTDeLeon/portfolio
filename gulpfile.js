@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const { watch } = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
@@ -12,10 +13,14 @@ function style() {
 
 function serve(done) {
     browserSync.init({
-      browserSync: {
+      server: {
         baseDir: './'
       }
     });
+    gulp.watch("src/scss/*.scss", style);
+    gulp.watch("src/js/*.js").on('change', browserSync.reload);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+
     done();
   }
 
