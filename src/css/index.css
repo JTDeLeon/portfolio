@@ -1,0 +1,26 @@
+.flex-area-skills {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 700px;
+  margin: auto; }
+  @media only screen and (max-width: 768px) {
+    .flex-area-skills {
+      width: 100%;
+      margin-top: -110px; } }
+  .flex-area-skills p {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px; }
+
+@media only screen and (max-width: 768px) {
+  #partners .content h2 {
+    display: none; } }
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    font-size: 15px !important; } }

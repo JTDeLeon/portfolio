@@ -1,0 +1,44 @@
+.flex-area-skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: auto;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: -110px;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 600;
+        border: 1px solid white;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        // box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+
+#partners {
+    @media only screen and (max-width: 768px) {
+        // height: 550px;
+        
+        .content {
+            // height: 430px;
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+}
+
+.logo {
+    @media only screen and (max-width: 1024px) {
+        font-size: 15px !important;
+    }
+    
+}
