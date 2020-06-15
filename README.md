@@ -8,4 +8,5 @@
 ## To Do: 
 - Update mobile bottom footer bug
 - Update contact form to function properly
+- Update sizing of skills buttons
 
